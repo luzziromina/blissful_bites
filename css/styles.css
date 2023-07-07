@@ -1,0 +1,575 @@
+/******************/
+/****GOOGLE FONTS***/
+/******************/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap');
+
+
+/******************/
+/*****RESET*******/
+/******************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/******************/
+/*****GENERAL******/
+/******************/
+
+.container-fluid{
+    width: 100%;
+}
+
+.container{
+    align-items: center;
+}
+
+.container-grid{
+    display: grid;
+}
+
+.colums-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+:is(.home-section-one, .home-section-two, .donut-gift-box-seccion-one){
+    width: 100%;
+    min-height: 100vh;
+}
+
+:is(.link-yellow, .link-pink, .link-light-blue, .link-light-blue-outline){
+    padding: 16px 24px;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+:is(.header, .container, .container-grid){
+    width: 1180px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+:is(.header, .container, header nav ul){
+    display: flex;
+}
+
+:is(.home-section-one .container, .home-section-two .container, .home-section-three .container, .footer .container, .about-us-section-one .container, .donut-gift-box-seccion-one .container){
+    justify-content: space-between;
+}
+
+:is(.home-section-one p, .home-section-two p, .home-section-three p, .contact-seccion-one p){
+    margin: 20px 0 40px 0;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link-yellow {
+   background-color: #EAC218;
+   color: white;
+}
+
+.link-pink {
+    background-color: #F45380;
+    color: white;
+}
+
+.link-light-blue{
+    background-color: #51A8BF;
+    color: white;
+}
+
+.link-light-blue-outline{
+    border: 2px solid #51A8BF;
+    background-color: #FFF;
+    color: #51A8BF;
+}
+
+/******************/
+/*****HEADER*******/
+/******************/
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+} 
+
+.header img {
+    width: 280px;
+}
+
+.header nav ul {
+    gap: 20px;
+}
+
+.link{
+    color: #4C2519;
+    padding-bottom: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link.active{
+    border-bottom: 3px dotted #4C2519;
+}
+
+
+/******************/
+/******FOOTER******/
+/******************/
+.footer{
+    background: url(../assets/footer-background-shape.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 48px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-size: 1.1rem;
+}
+
+.footer img{
+    width: 250px;
+}
+
+.footer nav ul li {
+    margin-bottom: 12px;
+}
+
+.footer nav ul li a {
+    color: #FFF;
+    font-size: 1.1rem;
+}
+
+.footer .container{    
+    height: 230px;
+}
+
+.footer .container-fluid{    
+    margin-top: 48px;
+    background: #F45380;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+.footer .container-fluid a{    
+    color: #FFF;
+    font-weight: 600;
+}
+
+/******************/
+/******HOME********/
+/******************/
+
+.home-section-one {
+    background: url(../assets/light-blue-shape.svg) no-repeat right bottom; 
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
+    background-size: 50%;
+    display: flex;
+    align-items: center; 
+}
+
+.home-section-one img{
+    width: 40%;
+}
+
+.home-section-one h1 {
+    font-size: 6rem;
+    color: #F45380;
+    line-height: 68px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.home-section-one h1 em{
+    display: block;
+}
+
+.home-section-two {
+    display: flex;
+    align-items: center; 
+}
+
+.home-section-two article {
+    width: 45%;
+}
+
+.home-section-two h2 {
+    font-size: 5.8rem;
+    color: #51A8BF;
+    line-height: 5.8rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.home-section-two-donuts-falling{
+    position: relative;
+}
+
+
+.home-section-two-donuts-falling img{
+    width: 310px;
+}
+
+.home-section-two-circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #F1D130;
+    position: absolute;
+    right: 50px;
+    top: -200px;
+    z-index: 1;
+}
+
+.home-section-two-donuts-falling {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section-two-donuts-falling img:first-child{
+    position: absolute;
+    right: 200px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.home-section-two-donuts-falling img:nth-child(2){
+    position: absolute;
+    right: 0;
+    top: -150px;
+    z-index: 3;
+}
+
+.home-section-two-donuts-falling img:nth-child(3){
+    position: absolute;
+    right: 230px;
+    top: 30px;
+    z-index: 4;
+}
+
+.home-section-three {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.home-section-three article {
+    width: 45%;
+}
+
+.home-section-three h2 {
+    font-size: 5rem;
+    color: #F45380;
+    font-family: 'DM Serif Display', serif;
+}
+
+.home-section-three video {
+    border-radius: 500px;
+    width: 50%;
+}
+
+/******************/
+/***OUR FLAVORS****/
+/******************/
+
+.our-flavors-section-one {
+    background: url(../assets/light-blue-shape-our-flavors.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.our-flavors-section-one h1 {
+    font-size: 6rem;
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+}
+
+.our-flavors-section-one .container {
+    justify-content: center;
+}
+
+.our-flavors-section-two nav ul .link.link.active{
+    color: #F45380;
+    border-bottom-color: #F45380;
+}
+
+.our-flavors-section-two nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.product-list{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    align-items: baseline;
+}
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.product-item h2{
+    font-size: 2.4rem;
+    color: #F45380;
+    font-family: 'DM Serif Display', serif;
+}
+
+.product-item p{
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.product-item-img {
+    width: 250px;
+}
+
+/******************/
+/*****ABOUT US*****/
+/******************/
+.about-us-section-one {
+    background: url(../assets/light-blue-shape-our-flavors.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.about-us-section-one h3{
+    font-size: 3.8rem;
+    color: #FFF;
+    font-family: 'DM Serif Display', serif;
+}
+
+.about-us-section-one h2{
+    font-size: 5.8rem;
+    color: #FFF;
+    margin-top: -20px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.about-us-section-one img{
+    width: 50%;
+}
+
+.about-us-section-two{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-us-section-two h1 {
+    font-size: 5.8rem;
+    color: #F45380;
+    font-family: 'DM Serif Display', serif;
+}
+
+.about-us-section-two p {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    max-width: 450px;
+}
+
+.about-us-section-two .container{
+    justify-content: space-around;
+}
+
+/******************/
+/**DONUT BOX GIFT**/
+/******************/
+
+.donut-gift-box-seccion-one {
+    background: url(../assets/yellow-shape.svg) no-repeat right bottom; 
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
+    background-size: 50%;
+    display: flex;
+    align-items: center; 
+}
+
+
+.donut-gift-box-seccion-one img{
+    width: 40%; 
+}
+
+
+.donut-gift-box-seccion-one .link-light-blue{
+    margin-top: 40px;
+    display:inline-block;
+}
+
+.donut-gift-box-seccion-one h1 {
+    font-size: 5.8rem;
+    color: #F45380;
+    line-height: 68px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box-list{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    align-items: baseline;
+}
+
+.box-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.box-item h2{
+    font-size: 2.4rem;
+    color: #51A8BF;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box-item-img {
+    width: 300px;
+}
+
+.donut-gift-box-section-two-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #51A8BF;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-gift-box-section-two-circle p{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+/******************/
+/****CONTACT******/
+/******************/
+
+.contact-seccion-one{
+    background: url(../assets/yellow-shape.svg) no-repeat right bottom; 
+    -webkit-background-size: 50%;
+    -moz-background-size: 50%;
+    -o-background-size: 50%;
+    background-size: 50%;
+    display: flex;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.contact-seccion-one .container{
+    padding-top: 100px;
+}
+
+.container-contact{
+    width: 40%;
+}
+
+.contact-seccion-one h1{
+    font-size: 72px;
+    margin-bottom: 30px;
+    color: #51A8BF;
+    font-family: 'DM Serif Display', serif;
+}
+
+.contact-seccion-one-img {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 40%;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-colum{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .form-colum:nth-child(5) {
+  grid-column: span 2; 
+}
+
+.form label{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 8px;
+}
+
+.form input[type="text"], .form input[type="email"], .form textarea{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 8px;
+    border: 1px solid #4C2519;
+    padding: 8px;
+}
+
+.contact-seccion-two article{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.contact-seccion-two iframe {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.contact-seccion-two h2{
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #F45380;
+    font-family: 'DM Serif Display', serif;
+}
