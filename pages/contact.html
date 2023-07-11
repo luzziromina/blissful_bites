@@ -15,7 +15,7 @@
     <header class="header w-100">
         <nav class="navbar navbar-expand-lg justify-content-between">
             <div class="container-lg">
-                <a class="navbar-brand" href="#"><img src="../assets/img/logo-blissful-bites.svg"
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-blissful-bites.svg"
                         alt="Blissful Bites Logo" loading="lazy"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -45,25 +45,35 @@
         </nav>
     </header>
     <main>
-        <section class="contact__section__one d-flex">
-            <div class="container-lg">
+        <section class="contact__section__one__mobile d-block d-md-none">
+            <div class="container-fluid g-0 d-flex align-items-center">
                 <div class="row">
-                    <div class="col-12 col-md-5">
-                        <h1 class="text-center text-md-start">Get in touch</h1>
+                    <!----AGREGAR ALTS!!!!-->
+                    <div class="col-12 d-flex justify-content-end">
+                        <img class="w-75" src="../assets/img/hand-with-a-donut.png" alt="">
+                    </div>  
+                    <div class="col-12">
+                        <h1 class="text-center">Get in touch</h1>
+                    </div>  
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
                         <form class="row" action="#">
-                            <div class="col-12 col-md-6 form__colum">
+                            <div class="col-12 form__colum">
                                 <label for="name">Name *</label>
                                 <input type="text" id="name" placeholder="John" required>
                             </div>
-                            <div class="col-12 col-md-6 form__colum">
+                            <div class="col-12 form__colum">
                                 <label for="lastname">Last name *</label>
                                 <input type="text" id="lastname" placeholder="Smith" required>
                             </div>
-                            <div class="col-12 col-md-6 form__colum">
+                            <div class="col-12 form__colum">
                                 <label for="email">Email *</label>
                                 <input type="email" id="email" placeholder="john.smith@gmail.com" required>
                             </div>
-                            <div class="col-12 col-md-6 form__colum">
+                            <div class="col-12 form__colum">
                                 <label for="subject">Subject</label>
                                 <input type="text" id="subject" placeholder="Order">
                             </div>
@@ -72,25 +82,65 @@
                                 <textarea name="message" id="message" cols="20" rows="5"
                                     placeholder="Hi! Blissful bite"></textarea>
                             </div>
-                            <div class="col-12 col-md-6 form__colum">
+                            <div class="col-12 form__colum mb-3">
                                 <input class="link--light-blue-outline" type="reset" value="Reset">
                             </div>
-                            <div class="col-12 col-md-6 form__colum">
+                            <div class="col-12 form__colum mb-3">
+                                <input class="link--light-blue" type="submit" value="Send">
+                            </div>
+                            <small>(*) Required</small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact__section__one align-items-center d-none d-md-flex">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h1 class="text-md-start">Get in touch</h1>
+                        <form class="row" action="#">
+                            <div class="col-md-6 form__colum">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" placeholder="John" required>
+                            </div>
+                            <div class="col-md-6 form__colum">
+                                <label for="lastname">Last name *</label>
+                                <input type="text" id="lastname" placeholder="Smith" required>
+                            </div>
+                            <div class="col-md-6 form__colum">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" placeholder="john.smith@gmail.com" required>
+                            </div>
+                            <div class="col-md-6 form__colum">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" placeholder="Order">
+                            </div>
+                            <div class="col-12 form__colum">
+                                <label for="message">Leave us a message... *</label>
+                                <textarea name="message" id="message" cols="20" rows="5"
+                                    placeholder="Hi! Blissful bite"></textarea>
+                            </div>
+                            <div class="col-md-6 form__colum">
+                                <input class="link--light-blue-outline" type="reset" value="Reset">
+                            </div>
+                            <div class="col-md-6 form__colum">
                                 <input class="link--light-blue" type="submit" value="Send">
                             </div>
                             <small>(*) Required</small>
                         </form>
                     </div>
                     <!----AGREGAR ALTS!!!!-->
-                    <img class="contact__section__one__img d-none d-md-block" src="../assets/img/hand-with-a-donut.png" alt="">
+                    <div class="col-md-5">
+                        <img class="contact__section__one__img" src="../assets/img/hand-with-a-donut.png" alt="">
+                    </div>  
                 </div>
             </div>
         </section>
         <section class="contact__section__two">
             <div class="container-lg">
                 <div class="row">
-
-                <h2>Visit us</h2>
+                <h2 class="text-center tect-md-start">Visit us</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.204878503333!2d-122.74714651302664!3d45.425371196488136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950ccd9dd03289%3A0x2a2651c83858de2a!2sTemplo%20de%20Portland!5e0!3m2!1ses-419!2sar!4v1686684805087!5m2!1ses-419!2sar"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -102,7 +152,8 @@
         <div class="container-lg align-content-center">
             <div class="row justify-content-lg-center py-2">
                 <div class="col-12 col-md-12 col-lg-3 text-start text-md-center text-lg-start my-auto">
-                    <img src="../assets/img/logo-blissful-bites-white.svg" alt="Blissful Bites Logo" loading="lazy">
+                    <img class="d-none d-lg-block" src="../assets/img/logo-blissful-bites-white.svg" alt="Blissful Bites Logo" loading="lazy">
+                    <img class="d-lg-block d-lg-none" src="../assets/img/logo-blissful-bites-white-original.svg" alt="Blissful Bites Logo" loading="lazy">
                 </div>
                 <div class="col-12 col-md-4 col-lg-2 border-md-pink my-auto">
                     <nav>

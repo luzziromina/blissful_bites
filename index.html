@@ -45,17 +45,17 @@
         </nav>
     </header>
     <main>
-        <section class="home__section__one d-flex w-100 align-items-center">
+        <section class="home__section__one d-flex w-100 align-items-top align-items-center">
             <div class="container-lg">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-md-5 text-center text-md-start order-2 order-md-1">
+                <div class="row align-items-center justify-content-lg-between">
+                    <div class="col-12 col-md-6 text-center text-md-start order-2 order-md-1">
                         <article>
                             <h1>Donut worry, be happy!</h1>
                             <p>Delight in heavenly donuts, a bite of pure bliss.</p>
                             <a class="link--yellow" href="#home__section__two">Discover now!</a>
                         </article>
                     </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-center order-1 order-md-2">
+                    <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-lg-center order-1 order-md-2">
                         <img src="assets/img/donut-with-a-bite.png" alt="Donut with bite next to a strawberry"
                             loading="lazy">
                     </div>
@@ -63,10 +63,20 @@
             </div>
         </section>
     </main>
-    <section class="home__section__two d-flex w-100 justify-content-between align-items-center" id="home__section__two">
+    <section class="home__section__two d-flex w-100 justify-content-between align-items-end align-items-md-center" id="home__section__two">
         <div class="container-lg">
             <div class="row align-items-center">
-                <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="col-12 d-block d-md-none text-center home__section__two__donuts__mobile">
+                    <img src="assets/img/donut-one-falling.png" alt="First delicius donut falling" loading="lazy">
+                    <img src="assets/img/donut-two-falling.png" alt="Second delicius donut falling" loading="lazy">
+                    <div class="home__section__two__donuts__circle"></div>
+                    <article>
+                        <h2>Flavors Unleashed: A Symphony for Your Taste Buds</h2>
+                        <p>Indulge in a Spectacular Fusion of Exquisite Flavors</p>
+                        <a class="link--pink" href="pages/our-flavors.html" title="Our flavors">Our flavors</a>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-md-6 d-none d-md-block">
                     <article>
                         <h2>Flavors Unleashed: A Symphony for Your Taste Buds</h2>
                         <p>Indulge in a Spectacular Fusion of Exquisite Flavors</p>
@@ -107,7 +117,8 @@
         <div class="container-lg align-content-center">
             <div class="row justify-content-lg-center py-2">
                 <div class="col-12 col-md-12 col-lg-3 text-start text-md-center text-lg-start my-auto">
-                    <img src="assets/img/logo-blissful-bites-white.svg" alt="Blissful Bites Logo" loading="lazy">
+                    <img class="d-none d-lg-block" src="assets/img/logo-blissful-bites-white.svg" alt="Blissful Bites Logo" loading="lazy">
+                    <img class="d-lg-block d-lg-none" src="assets/img/logo-blissful-bites-white-original.svg" alt="Blissful Bites Logo" loading="lazy">
                 </div>
                 <div class="col-12 col-md-4 col-lg-2 border-md-pink my-auto">
                     <nav>
