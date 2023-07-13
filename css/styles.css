@@ -48,6 +48,11 @@ ul li {
     width: 100%;
     min-height: 100vh;
 }
+@media (max-width: 768px) {
+    :is(.home__section__one, .home__section__two, .donut__gift__box__section__one, ){
+        min-height: calc(100vh - 70px);
+    }
+}   
 
 :is(.link--yellow, .link--pink, .link--light-blue, .link--light-blue-outline){
     padding: 16px 24px;
@@ -329,14 +334,14 @@ ul li {
 
     .home__section__one img{
         width: 100%;
-        max-width: 400px;
+        max-width: 360px;
         margin: auto;
     }
 
     .home__section__one h1 {
         font-size: 3.5rem;
         color: #FFF;
-        line-height: 3.5rem;
+        line-height: 3.3rem;
     }
 }
 
@@ -346,8 +351,8 @@ ul li {
     }
 
     .home__section__one h1 {
-        font-size: 3.2rem;
-        line-height: 3.2rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 }
 
@@ -571,7 +576,8 @@ ul li {
 }
 
 .our__flavors__section__two__list__item h2{
-    font-size: 2.4rem;
+    font-size: 2.3rem;
+    margin-top: 20px;
     color: #F45380;
     font-family: 'Archivo Black', sans-serif;
 }
@@ -684,12 +690,12 @@ ul li {
 }
 
 @media (max-width: 768px) {
-    .about__us__section__one h2{
-        font-size: 3.5rem;
+    .about__us__section__one {
+        min-height: 100vh;
     }
 
-    .about__us__section__one {
-        min-height: 80vh;
+    .about__us__section__one h2{
+        font-size: 3.5rem;
     }
 
     .about__us__section__two h1 {
@@ -895,6 +901,7 @@ form input[type="text"], form input[type="email"], form textarea{
 .contact__section__two iframe {
     width: 100%;
     border-radius: 50px;
+    margin-bottom: 120px;
 }
 
 .contact__section__two h2{
@@ -917,7 +924,7 @@ form input[type="text"], form input[type="email"], form textarea{
         -moz-background-size: 100%;
         -o-background-size: 100%;
         background-size: cover;
-        min-height: 60vh;
+        min-height: calc(100vh - 70px);
     }
 
     .contact__section__one__mobile h1{
@@ -925,6 +932,7 @@ form input[type="text"], form input[type="email"], form textarea{
         font-family: 'Archivo Black', sans-serif;
         color: #FFF;
     }
+
 
     .contact__section__two{
         margin-top: 80px;
