@@ -88,24 +88,83 @@ ul li {
 .link--yellow {
    background-color: #EAC218;
    color: white;
+   -webkit-transition: all 150ms ease;
+   -moz-transition: all 150ms ease;
+   -ms-transition: all 150ms ease;
+   -o-transition: all 150ms ease;
+   transition: all 150ms ease;
+}
+
+.link--yellow:hover {
+    background-color: #deb916;
+    color: white;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
 }
 
 .link--pink {
     background-color: #F45380;
     color: white;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+.link--pink:hover {
+    background-color: #da4872;    
+    color: white;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
 }
 
 .link--light-blue{
     background-color: #51A8BF;
     color: white;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+.link--light-blue:hover{
+    background-color: #4796ac;
+    color: white;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
 }
 
 .link--light-blue-outline{
     border: 2px solid #51A8BF;
     background-color: #FFF;
     color: #51A8BF;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
 }
 
+.link--light-blue-outline:hover{
+    background-color: #f3f2f2;
+    color: #51A8BF;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
 
 /******************/
 /*****HEADER*******/
