@@ -1,0 +1,84 @@
+.link{
+    color: $brown-700;
+    padding-bottom: 8px;
+    font-family: $primary-font;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+    &:hover{
+        color: $brown-700;
+        border-bottom: 3px solid $brown-700;
+        -webkit-transition: all 150ms ease;
+        -moz-transition: all 150ms ease;
+        -ms-transition: all 150ms ease;
+        -o-transition: all 150ms ease;
+        transition: all 150ms ease;
+        @media (max-width: 992px) {
+            border-bottom: none;
+        }
+    }
+    &.active{
+        border-bottom: 3px solid $brown-700;
+        @media (max-width: 992px) {
+            color: $pink-500;
+            border-bottom: none;
+        }
+    }
+}
+
+:is(.home__section__one, .home__section__two, .donut__gift__box__section__one){
+    width: 100%;
+    min-height: 100vh;
+    @media (max-width: $screen-small) {
+        min-height: calc(100vh - 70px);
+    }  
+}
+
+:is(.home__section__one p, .home__section__two p, .home__section__three p, .contact__section__one p, .about__us__section__one p){
+    margin: 20px 0 40px 0;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    @media (max-width: $screen-small) {
+        margin: 16px 0 36px 0;
+        font-size: 1.4rem;
+    }
+    @media (max-width: $screen-extra-small) {
+        margin: 12px 0 32px 0;
+        font-size: 1.2rem;
+    }
+}
+
+.nav-tabs .nav-link{
+    color: $brown-700;
+    font-size: 1.4rem;
+    border: none;
+    &.active{
+        color: $pink-500;
+        border-bottom: 2px solid $pink-500;
+    }
+}
+
+
+label{
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"], textarea{
+    font-size: 14px;
+    font-family: $primary-font;
+    border-radius: 8px;
+    border: 1px solid $brown-700;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.form__colum{
+    display: flex;
+    flex-direction: column;
+}

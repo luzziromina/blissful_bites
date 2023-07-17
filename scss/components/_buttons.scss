@@ -1,0 +1,66 @@
+.button{
+    color: $white;
+    padding: 16px 24px;
+    font-family: $primary-font;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+
+    &:hover{
+        color: $white;
+        -webkit-transition: all 150ms ease;
+        -moz-transition: all 150ms ease;
+        -ms-transition: all 150ms ease;
+        -o-transition: all 150ms ease;
+        transition: all 150ms ease;
+    }
+
+    &--yellow {
+        background-color: $yellow-500;
+        &:hover{
+            background-color: $yellow-700;
+        }
+    }
+
+    &--pink {
+        background-color: $pink-500;
+        &:hover{
+            background-color: $pink-700;
+        }
+    }
+
+    &--light-blue{
+        background-color: $light-blue-500;
+        &:hover{
+            background-color: $light-blue-700;
+        }
+    }
+}
+
+
+ .button--light-blue-outline{
+     border: 2px solid $light-blue-500;
+     background-color: $white;
+     color: $light-blue-500;
+     -webkit-transition: all 150ms ease;
+     -moz-transition: all 150ms ease;
+     -ms-transition: all 150ms ease;
+     -o-transition: all 150ms ease;
+     transition: all 150ms ease;
+ }
+ 
+ .button--light-blue-outline:hover{
+     background-color: #f3f2f2;
+     color: $light-blue-500;
+     -webkit-transition: all 150ms ease;
+     -moz-transition: all 150ms ease;
+     -ms-transition: all 150ms ease;
+     -o-transition: all 150ms ease;
+     transition: all 150ms ease;
+ }

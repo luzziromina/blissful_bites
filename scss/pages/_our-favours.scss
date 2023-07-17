@@ -1,0 +1,64 @@
+
+//OUR FLAVORS SECTION ONE
+
+.our__flavors__section__one {
+    background: url(../assets/light-blue-shape-our-flavors.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    @media (max-width: $screen-small) {
+        min-height: 25vh;
+    }
+
+    h1 {
+        font-size: 6rem;
+        color: $white;
+        font-family: $secundary-font;
+        @media (max-width: $screen-medium) {
+            font-size: 5rem;
+        }
+        @media (max-width: $screen-small) {
+            font-size: 3rem;
+        }
+    }
+
+}
+
+
+//OUR FLAVORS SECTION TWO
+
+.our__flavors__section__two {
+    ul {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .our__flavors__section__two__list__item{
+        margin-bottom: 100px;
+        @media (max-width: $screen-small) {
+            margin-bottom: 40px;
+        }
+        
+
+        h2{
+            font-size: 2.3rem;
+            margin-top: 20px;
+            color: $pink-500;
+            font-family: $secundary-font;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .our__flavors__section__two__list__item__img {
+        width: 250px;
+        @media (max-width: $screen-small) {
+            width: 170px;
+        }
+    }
+    
+}

@@ -1,0 +1,39 @@
+.header {
+    position: absolute;
+    z-index: 5;
+    .navbar{
+        padding: 40px 0;
+    } 
+    img {
+        width: 280px;
+    }
+    nav ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: $screen-medium) {
+    .header {
+        .navbar{
+            padding: 0;
+            background-color: $white;
+        } 
+    }
+    .navbar-collapse {
+        padding: 10px 0;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: -1px -1px 6px 4px rgba(244, 83, 129, 0.811);
+        -webkit-box-shadow: -1px -1px 6px 4px rgba(244, 83, 129, 0.811);
+        -moz-box-shadow: -1px -1px 6px 4px rgba(244, 83, 129, 0.811);
+    }   
+}
+
+@media (max-width: $screen-small) {
+    .header {
+        position: sticky;
+        top: 0;
+     }
+}

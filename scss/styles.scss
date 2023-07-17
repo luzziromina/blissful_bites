@@ -1,0 +1,19 @@
+/*BASE*/
+@import "base/fonts.scss";
+@import "base/variables.scss";
+@import "base/reset.scss";
+@import "base/utilities.scss";
+
+/*LAYOUT*/
+@import "layouts/header.scss";
+@import "layouts/footer.scss";
+
+/*COMPONENTS*/
+@import "components/buttons.scss";
+
+/*PAGES*/
+@import "pages/home.scss";
+@import "pages/our-favours.scss";
+@import "pages/about-us.scss";
+@import "pages/donut-gift-box.scss";
+@import "pages/contact.scss";
