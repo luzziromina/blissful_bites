@@ -1,25 +1,13 @@
 //HOME SECTION ONE 
 .home__section__one {
-    background: url(../assets/light-blue-shape.svg) no-repeat right center; 
-    -webkit-background-size: 50%;
-    -moz-background-size: 50%;
-    -o-background-size: 50%;
-    background-size: 50%;
+    @include background-image("../assets/light-blue-shape.svg", right, center, 50%);
 
-    @media (max-width: $screen-medium) {
-        -webkit-background-size: 60%;
-        -moz-background-size: 60%;
-        -o-background-size: 60%;
-        background-size: 60%;   
+    @media (max-width: map.get($screens, "medium")) {
+        @include background-image-size(60%);
     }
 
-    @media (max-width: $screen-small) {
-        background: url(../assets/light-blue-shape-mobile.svg) no-repeat center bottom; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
+    @media (max-width: map.get($screens, "small")) {
+        @include background-image("../assets/light-blue-shape-mobile.svg", center, bottom, cover);
         p { 
             color: $white;
         }
@@ -29,13 +17,13 @@
         width: 80%;
         margin: auto;
 
-        @media (max-width: $screen-small) {
+        @media (max-width: map.get($screens, "small")) {
             width: 100%;
             max-width: 360px;
             margin: auto;
         }
 
-        @media (max-width: $screen-extra-small) {
+        @media (max-width: map.get($screens, "extra-small")) {
             max-width: 300px;
         }
     }
@@ -46,18 +34,18 @@
         line-height: 6.5rem;
         font-family: $secundary-font;
 
-        @media (max-width: $screen-medium) {
+        @media (max-width: map.get($screens, "medium")) {
             font-size: 5.5rem;
             line-height: 5rem;
         }
 
-        @media (max-width: $screen-small) {
+        @media (max-width: map.get($screens, "small")) {
             font-size: 3.5rem;
             color: $white;
             line-height: 3.3rem;
         }
 
-        @media (max-width: $screen-extra-small) {
+        @media (max-width: map.get($screens, "extra-small")) {
             font-size: 2.5rem;
             line-height: 3rem;
         }

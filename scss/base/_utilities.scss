@@ -5,20 +5,13 @@
     font-size: 1.4rem;
     cursor: pointer;
     border: none;
-    -webkit-transition: all 150ms ease;
-    -moz-transition: all 150ms ease;
-    -ms-transition: all 150ms ease;
-    -o-transition: all 150ms ease;
-    transition: all 150ms ease;
+    @include transition-time(250ms);
+
     &:hover{
         color: $brown-700;
         border-bottom: 3px solid $brown-700;
-        -webkit-transition: all 150ms ease;
-        -moz-transition: all 150ms ease;
-        -ms-transition: all 150ms ease;
-        -o-transition: all 150ms ease;
-        transition: all 150ms ease;
-        @media (max-width: 992px) {
+        @include transition-time(250ms);
+        @media (max-width: map.get($screens, "medium")) {
             border-bottom: none;
         }
     }
@@ -34,20 +27,17 @@
 :is(.home__section__one, .home__section__two, .donut__gift__box__section__one){
     width: 100%;
     min-height: 100vh;
-    @media (max-width: $screen-small) {
-        min-height: calc(100vh - 70px);
-    }  
 }
 
 :is(.home__section__one p, .home__section__two p, .home__section__three p, .contact__section__one p, .about__us__section__one p){
     margin: 20px 0 40px 0;
     font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
-    @media (max-width: $screen-small) {
+    font-family: $primary-font;
+    @media (max-width: map.get($screens, "small")) {
         margin: 16px 0 36px 0;
         font-size: 1.4rem;
     }
-    @media (max-width: $screen-extra-small) {
+    @media (max-width: map.get($screens, "extra-small")) {
         margin: 12px 0 32px 0;
         font-size: 1.2rem;
     }

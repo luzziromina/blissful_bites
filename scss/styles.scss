@@ -1,6 +1,9 @@
+@use "sass:map";
+
 /*BASE*/
 @import "base/fonts.scss";
 @import "base/variables.scss";
+@import "base/mixins.scss";
 @import "base/reset.scss";
 @import "base/utilities.scss";
 

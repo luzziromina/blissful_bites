@@ -6,22 +6,15 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
-    -webkit-transition: all 150ms ease;
-    -moz-transition: all 150ms ease;
-    -ms-transition: all 150ms ease;
-    -o-transition: all 150ms ease;
-    transition: all 150ms ease;
+    @include transition-time(250ms);
 
     &:hover{
         color: $white;
-        -webkit-transition: all 150ms ease;
-        -moz-transition: all 150ms ease;
-        -ms-transition: all 150ms ease;
-        -o-transition: all 150ms ease;
-        transition: all 150ms ease;
+        @include transition-time(250ms);
     }
 
     &--yellow {
+        @extend .button;
         background-color: $yellow-500;
         &:hover{
             background-color: $yellow-700;
@@ -29,6 +22,7 @@
     }
 
     &--pink {
+        @extend .button;
         background-color: $pink-500;
         &:hover{
             background-color: $pink-700;
@@ -36,31 +30,21 @@
     }
 
     &--light-blue{
+        @extend .button;
         background-color: $light-blue-500;
         &:hover{
             background-color: $light-blue-700;
         }
     }
+    
+    &--light-blue-outline{
+        @extend .button;
+        border: 2px solid $light-blue-500;
+        background-color: $white;
+        color: $light-blue-500;
+        &:hover{
+            background-color: #f3f2f2;
+            color: $light-blue-500;
+        }
+    }
 }
-
-
- .button--light-blue-outline{
-     border: 2px solid $light-blue-500;
-     background-color: $white;
-     color: $light-blue-500;
-     -webkit-transition: all 150ms ease;
-     -moz-transition: all 150ms ease;
-     -ms-transition: all 150ms ease;
-     -o-transition: all 150ms ease;
-     transition: all 150ms ease;
- }
- 
- .button--light-blue-outline:hover{
-     background-color: #f3f2f2;
-     color: $light-blue-500;
-     -webkit-transition: all 150ms ease;
-     -moz-transition: all 150ms ease;
-     -ms-transition: all 150ms ease;
-     -o-transition: all 150ms ease;
-     transition: all 150ms ease;
- }

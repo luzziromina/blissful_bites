@@ -1,8 +1,5 @@
 .footer{
-    background: url(../assets/footer-background-shape.svg);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background-image("../assets/footer-background-shape.svg", top, center, cover);
     padding: 48px 0 0 0;
     font-family: $primary-font;
     color: $white;
@@ -19,18 +16,10 @@
     a {
         color: $white;
         font-size: 1.1rem;
-        -webkit-transition: all 150ms ease;
-        -moz-transition: all 150ms ease;
-        -ms-transition: all 150ms ease;
-        -o-transition: all 150ms ease;
-        transition: all 150ms ease;
+        @include transition-time(250ms);
         &:hover{
             color: $pink-500;
-            -webkit-transition: all 150ms ease;
-            -moz-transition: all 150ms ease;
-            -ms-transition: all 150ms ease;
-            -o-transition: all 150ms ease;
-            transition: all 150ms ease;
+            @include transition-time(250ms);
         }
     }
 
@@ -63,7 +52,7 @@
 }
 
 
-@media (max-width: $screen-small) {
+@media (max-width: map.get($screens, "small")) {
     .footer{
         padding: 100px 0 0 0;
 

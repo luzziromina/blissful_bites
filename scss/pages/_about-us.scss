@@ -1,14 +1,8 @@
 //ABOUT SECTION ONE
 .about__us__section__one {
-    background: url(../assets/light-blue-shape-our-flavors.svg);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background-image("../assets/light-blue-shape-our-flavors.svg", top, center, cover);
     min-height: 80vh;
-    @media (max-width: $screen-medium) {
-        min-height: 80vh;
-    }
-    @media (max-width: $screen-small) {
+    @media (max-width: map.get($screens, "small")) {
         min-height: 100vh;
     }
 
@@ -19,11 +13,11 @@
         display: flex;
         align-items: end;
         gap: 20px;
-        @media (max-width: $screen-medium) {
+        @media (max-width: map.get($screens, "medium")) {
             font-size: 4.5rem;
             justify-content: center;
         }
-        @media (max-width: $screen-small) {
+        @media (max-width: map.get($screens, "small")) {
             font-size: 3.5rem;
         }
     }
@@ -45,7 +39,7 @@
 .about__us__section__two{
     margin-top: 40px;
     margin-bottom: 80px;
-    @media (max-width: $screen-small) {
+    @media (max-width: map.get($screens, "small")) {
         margin-bottom: 40px;
     }
 
@@ -53,10 +47,10 @@
         font-size: 6.8rem;
         color: $pink-500;
         font-family: $secundary-font;
-        @media (max-width: $screen-medium) {
+        @media (max-width: map.get($screens, "medium")) {
             font-size: 5rem;
         }
-        @media (max-width: $screen-small) {
+        @media (max-width: map.get($screens, "small")) {
             font-size: 3.5rem;
         }
     }
@@ -72,14 +66,14 @@
 }
 
 
-@media (max-width: $screen-medium) {
+@media (max-width: map.get($screens, "medium")) {
     .about__us__section__one img, .about__us__section__two img {
         width: 100%;
         max-width: 420px;
     }
 }
 
-@media (max-width: $screen-small) {
+@media (max-width: map.get($screens, "small")) {
     .about__us__section__one img, .about__us__section__two img {
         max-width: 320px;
     }

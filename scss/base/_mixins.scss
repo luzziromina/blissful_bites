@@ -1,0 +1,23 @@
+@mixin background-image($url, $vertical-position, $horizontal-position, $backgound-size){
+    background: url($url) no-repeat $vertical-position $horizontal-position; 
+    -webkit-background-size: $backgound-size;
+    -moz-background-size: $backgound-size;
+    -o-background-size: $backgound-size;
+    background-size: $backgound-size;
+}
+
+@mixin background-image-size($backgound-size){
+    -webkit-background-size: $backgound-size;
+    -moz-background-size: $backgound-size;
+    -o-background-size: $backgound-size;
+    background-size: $backgound-size;
+}
+
+
+@mixin transition-time($time){
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease;
+}
