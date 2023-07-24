@@ -2,6 +2,10 @@
 .donut__gift__box__section__one {
     @include background-image("../assets/yellow-shape.svg", right, center, 50%);
 
+    @media (min-width: map.get($screens, "extra-large")) {
+        @include background-image("../assets/yellow-shape.svg", 95%, center, 50%);
+    }
+
     @media (max-width: map.get($screens, "medium")) {
         @include background-image-size(60%);
     }
@@ -26,6 +30,10 @@
 
     img{
         width: 80%; 
+        @media (min-width: map.get($screens, "extra-large")) {
+            width: 100%; 
+            margin-right: -80px;
+        }
         @media (max-width: map.get($screens, "medium")) {
             width: 100%; 
             max-width: 420px;

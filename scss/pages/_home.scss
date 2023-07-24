@@ -1,6 +1,9 @@
 //HOME SECTION ONE 
 .home__section__one {
     @include background-image("../assets/light-blue-shape.svg", right, center, 50%);
+    @media (min-width: map.get($screens, "extra-large")) {
+        @include background-image("../assets/light-blue-shape.svg", 95%, center, 50%);
+    }
 
     @media (max-width: map.get($screens, "medium")) {
         @include background-image-size(60%);
@@ -16,6 +19,10 @@
     img{
         width: 80%;
         margin: auto;
+
+        @media (min-width: map.get($screens, "extra-large")) {
+            width: 100%;
+        }
 
         @media (max-width: map.get($screens, "small")) {
             width: 100%;
@@ -91,6 +98,11 @@
 
         img{
             width: 310px;
+
+            @media (min-width: map.get($screens, "extra-large")) {
+                width: 380px;
+            }
+
             @media (max-width: $screen-large) {
                 width: 270px;
             }  
@@ -196,6 +208,9 @@
     min-height: 60vh;
     margin-bottom: 50px;
 
+    @media (min-width: map.get($screens, "extra-large")) {
+        min-height: 40vh;
+    }
     @media (max-width: $screen-small) {
         min-height: inherit;
         margin-top: 80px;

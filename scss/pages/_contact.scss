@@ -2,7 +2,9 @@
 .contact__section__one{
     @include background-image("../assets/yellow-shape.svg", right, center, 50%);
     min-height: 100vh;
-
+    @media (min-width: map.get($screens, "extra-large")) {
+        @include background-image("../assets/yellow-shape.svg", 95%, center, 50%);
+    }
     .container-lg{
         padding-top: 100px;
     }
