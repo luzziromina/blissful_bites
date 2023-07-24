@@ -6,11 +6,9 @@
     cursor: pointer;
     border: none;
     @include transition-time(250ms);
-
     &:hover{
         color: $brown-700;
         border-bottom: 3px solid $brown-700;
-        @include transition-time(250ms);
         @media (max-width: map.get($screens, "medium")) {
             border-bottom: none;
         }

@@ -1,10 +1,7 @@
 //ABOUT SECTION ONE
 .about__us__section__one {
     @include background-image("../assets/light-blue-shape-our-flavors.svg", top, center, cover);
-    min-height: 80vh;
-    @media (max-width: map.get($screens, "small")) {
-        min-height: 100vh;
-    }
+    min-height: 100vh;
 
     h2{
         font-size: 5.8rem;

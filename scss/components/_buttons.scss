@@ -10,7 +10,6 @@
 
     &:hover{
         color: $white;
-        @include transition-time(250ms);
     }
 
     &--yellow {
