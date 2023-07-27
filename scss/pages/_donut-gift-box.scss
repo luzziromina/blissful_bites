@@ -29,17 +29,8 @@
     }
 
     img{
-        width: 80%; 
         @media (min-width: map.get($screens, "extra-large")) {
-            width: 100%; 
             margin-right: -80px;
-        }
-        @media (max-width: map.get($screens, "medium")) {
-            width: 100%; 
-            max-width: 420px;
-        }
-        @media (max-width: map.get($screens, "small")) {
-            max-width: 320px;
         }
     }
 
