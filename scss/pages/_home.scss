@@ -17,22 +17,7 @@
     }
     
     img{
-        width: 80%;
         margin: auto;
-
-        @media (min-width: map.get($screens, "extra-large")) {
-            width: 100%;
-        }
-
-        @media (max-width: map.get($screens, "small")) {
-            width: 100%;
-            max-width: 360px;
-            margin: auto;
-        }
-
-        @media (max-width: map.get($screens, "extra-small")) {
-            max-width: 300px;
-        }
     }
 
     h1 {
