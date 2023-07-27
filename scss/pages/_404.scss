@@ -1,0 +1,34 @@
+.error__section__one {
+    margin-top: 70px;
+    min-height: calc(100vh - 200px);
+
+    h1{
+        font-size: 2rem; 
+        font-family: $primary-font;
+        margin-top: 40px;
+        @media (max-width: map.get($screens, "small")) {
+            font-size: 1.8rem;
+        }
+    }
+
+    p{
+        font-size: 1.6rem; 
+        margin: 0;
+    }
+
+    img{
+        margin: auto;
+        width: 100%;
+    }
+
+    a {
+        color: $light-blue-500;
+        cursor: pointer;
+        @include transition-time(200ms);
+
+        &:hover{
+            color: $light-blue-700;
+            border-bottom: 3px solid $light-blue-700;
+        }
+    }
+}
