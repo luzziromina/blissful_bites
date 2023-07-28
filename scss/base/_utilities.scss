@@ -15,7 +15,7 @@
     }
     &.active{
         border-bottom: 3px solid $brown-700;
-        @media (max-width: 992px) {
+        @media (max-width: map.get($screens, "medium")) {
             color: $pink-500;
             border-bottom: none;
         }
