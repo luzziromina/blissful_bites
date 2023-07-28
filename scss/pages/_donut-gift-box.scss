@@ -44,6 +44,7 @@
 //DONUT GIFT BOX SECTION TWO
 
 .donut__gift__box__section__two{
+    padding-top: 100px;
     @media (max-width: map.get($screens, "medium")) {
         padding-top: 70px;
     }
@@ -95,12 +96,18 @@
         justify-content: center;
         margin-bottom: 60px;
         position: relative;
+        gap: 10px;
 
         h2{
             font-size: 2.4rem;
             color: $light-blue-500;
             font-family: $secundary-font;
+            margin: 0;
         }
 
+        p{
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
     }
 }

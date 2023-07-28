@@ -48,15 +48,16 @@
         }
 
         p{
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             line-height: 2rem;
+            text-align: center;
         }
     }
 
     .our__flavors__section__two__list__item__img {
         width: 250px;
         @media (max-width: map.get($screens, "small")) {
-            width: 170px;
+            width: 200px;
         }
     }
     

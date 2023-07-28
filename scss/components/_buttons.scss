@@ -12,6 +12,11 @@
         color: $white;
     }
 
+    &--small {
+        @extend .button;
+        padding: 8px 16px;
+    }
+
     &--yellow {
         @extend .button;
         background-color: $yellow-500;
