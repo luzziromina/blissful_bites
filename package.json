@@ -1,11 +1,7 @@
 {
   "name": "blissful-bites-proyect",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "browser.open('https://luzziromina.github.io/blissful_bites/index.html')",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,6 +11,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/luzziromina/blissful_bites/issues"
-  },
-  "homepage": "https://github.com/luzziromina/blissful_bites#readme"
+  }
 }
