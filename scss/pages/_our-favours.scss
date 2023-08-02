@@ -31,6 +31,9 @@
         display: flex;
         gap: 40px;
         margin-bottom: 40px;
+        @media (max-width: map.get($screens, "small")) {
+            justify-content: center;
+        }
     }
 
     .our__flavors__section__two__list__item{
@@ -45,6 +48,7 @@
             margin-top: 20px;
             color: $pink-500;
             font-family: $secundary-font;
+            text-align: center;
         }
 
         p{

@@ -34,3 +34,25 @@ ul {
 ul li {
     list-style: none;
 }
+
+/* Ancho y color de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f1f1f1;
+  }
+  
+/* Estilo del botón de agarre (grip) */
+::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 5px;
+}
+  
+/* Estilo de la parte superior e inferior de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::selection {
+    color: $white; /* Cambia el color del texto seleccionado a blanco */
+    background-color: $pink-500; /* Cambia el color de fondo del texto seleccionado a azul */
+}
